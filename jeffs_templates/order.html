@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+  <p>{{foods}}</p>
+  <div align = "center">
+    <select>
+      {% for fruit in foods %}
+        <option>{{fruit}}</option>
+      {% endfor %}
+    </select>
+  </div>
+
+  <div align = "center">
+    <img src = "static/foodBasket.jpg" alt = "groceries are fresh from InstaBasket!" widith = "200" height = "200">
+  </div>
+{% endblock content %}

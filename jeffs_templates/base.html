@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>InstaBasket</title>
+  </head>
+  <body align="center">
+  <nav align = "center">
+    InstaBasket
+    <img src="static/shopping_cart.png" alt="Cart">
+    {% if 'order' not in request.path %}
+      <a href="/order">Order</a>
+    {% endif %}
+
+    <a href="/about">About</a>
+    1-800-IBASKET
+  </nav>
+  {% block content %}
+  {% endblock content %}
+  </body>
+</html>
